@@ -14,7 +14,7 @@ install.packages("devtools")
 
 * install rsoc from Github with devtools:
 ````R
-devtools::install_github("tomthe/rsoc")
+devtools::install_github("MPIDR/rsocGS_marry_after_childbirth")
 ````
 
 ### Install precompiled package (Windows only)
@@ -36,7 +36,7 @@ library("rsoc")
 
 # create a new folder for all the files related to a simulation.
 # this will be in your home- or user-directory:
-folder = rsoc::create_simulation_folder()
+folder = rsocGS_marry_after_childbirth::create_simulation_folder()
 #folder = "C:/Users/tom/socsim/socsim_sim_3792/"
 
 # create a new supplement-file. Supplement-files tell socsim what
@@ -49,7 +49,7 @@ supfile = rsoc::create_sup_file(folder)
 seed = 300
 
 # Start the simulation:
-rsoc::run1simulationwithfile(folder,supfile,seed,process_method = "inprocess")
+rsocGS_marry_after_childbirth::run1simulationwithfile(folder,supfile,seed,process_method = "inprocess")
 
 ````
 
